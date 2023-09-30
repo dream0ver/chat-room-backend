@@ -1,7 +1,7 @@
 require("dotenv").config()
 const WebSocketServer = require("ws").WebSocketServer
 const WebSocket = require("ws")
-const createServer = require("https").createServer
+const createServer = require("http").createServer
 const PORT = process.env.PORT || 9847
 const server = createServer()
 const wss = new WebSocketServer({ server })
